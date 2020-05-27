@@ -37,3 +37,23 @@ function App() {
 }
 
 export default App;
+
+import * as React from 'react';
+import { render } from 'react-dom';
+
+import Board from './Board';
+import { Usage } from './Pieces';
+
+import './styles.css';
+
+function App() {
+  return (
+    <>
+      <Board />
+      <Usage />
+    </>
+  );
+}
+
+const rootElement = document.getElementById('root');
+render(<App />, rootElement);
